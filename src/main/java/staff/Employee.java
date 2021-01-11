@@ -32,8 +32,10 @@ public abstract class Employee {
         return this.salary;
     }
 
-    public void raisesalary(int number){
-        this.salary += ((getSalary() * number) / 100);
+    public void raisesalary(int number) {
+        if (number > 0) {
+            this.salary += ((getSalary() * number) / 100);
+        }
     }
 
     public Double payBonus(){

@@ -41,9 +41,15 @@ public class EmployeeTest {
     }
 
     @Test
-    public void canRaiseSalary(){
+    public void canRaiseSalary__positiveNumber(){
         employee.raisesalary(5);
         assertEquals(45282.03, employee.getSalary(), 0.01);
+    }
+
+    @Test
+    public void canRaiseSalary__negativeNumber(){
+        employee.raisesalary(-5);
+        assertEquals(43125.74, employee.getSalary(), 0.01);
     }
 
     @Test
