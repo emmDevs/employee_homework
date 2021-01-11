@@ -24,7 +24,7 @@ public abstract class Employee {
         return this.salary;
     }
 
-    public void raisesalary(Double number){
+    public void raisesalary(int number){
         this.salary += ((getSalary() * number) / 100);
     }
 
