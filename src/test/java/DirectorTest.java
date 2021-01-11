@@ -43,6 +43,6 @@ public class DirectorTest {
 
     @Test
     public void canGetBonus(){
-        assertEquals(587.65, director.payBonus(), 0.01);
+        assertEquals(1175.30, director.payBonus(), 0.01);
     }
 }
