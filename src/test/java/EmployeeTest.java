@@ -21,6 +21,16 @@ public class EmployeeTest {
     }
 
     @Test
+    public void setName__notNull(){
+        assertEquals("Ross Geller", employee.setName("Ross Geller"));
+    }
+
+    @Test
+    public void setName__Null(){
+        assertEquals("Matt LeBlanc", employee.setName(null));
+    }
+
+    @Test
     public void getNINumber(){
         assertEquals("BA123456E", employee.getnINumber());
     }
